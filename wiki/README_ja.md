@@ -1,3 +1,7 @@
+<div align="right">
+   <a href="https://github.com/takkii/darkknight/tree/main/wiki">英語</a> / 日本語
+</div>
+
 ### 暗黒騎士
 
 > 現在: エンドポイント毎の認可🎯
