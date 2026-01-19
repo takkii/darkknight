@@ -26,7 +26,7 @@ phx.server --no-compile
 # http://localhost:4000
 phx.server
 
-# Role in darknight
+# Role in darkknight
 javascript, front end + additional functionality
 elixir, backend + control
 ```

@@ -26,11 +26,11 @@ phx.server --no-compile
 # http://localhost:4000
 phx.server
 
-# 役割 (darknight内)
+# 役割 (darkknight内)
 javascript、フロントエンド + 機能追加
 elixir、バックエンド + 制御
 ```
 
-[DarkReader](https://addons.mozilla.org/ja/firefox/addon/darkreader/)をmozilla firefoxでは使用しています。
+[DarkReader](https://addons.mozilla.org/ja/firefox/addon/darkreader/)をmozilla firefoxで使用しています。
 
 _更新履歴: 2026/01/18🔄_
