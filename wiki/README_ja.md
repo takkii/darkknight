@@ -27,10 +27,6 @@ javascript、フロントエンド + 機能追加
 elixir、バックエンド + 制御
 ```
 
-### 初期構成
-
-> wget https://github.com/takkii/darknight/archive/refs/tags/v1.0.1.3.zip
-
-※ ハローワールドを起動時に表示します。Phoenixプロジェクト、新規開発時ご利用ください。
+[DarkReader](https://addons.mozilla.org/ja/firefox/addon/darkreader/)をmozilla firefoxでは使用しています。
 
 _更新履歴: 2026/01/18🔄_
