@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <a name="name"><title>overdrive</title></a>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"} />
+    <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}>
+    </script>
+</head>
+<main class="main">
+    <div class="menu-wrapper">
+        <input type="checkbox" id="menu-toggle" hidden>
+
+        <label class="menu-icon" for="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="overlay"></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="#name"><p>Welcome</p></a></li>
+                <li><a href="#youtube"><p>youtube</p></a></li>
+                <li><a href="#SPA"><p>SPA</p></a></li>
+                <li><a href="#GitHub"><p>GitHub/takkii</p></a></li>
+                <li><a href="#GitHubPage"><p>GitHub/Pages</p></a></li>
+                <li><a href="#Gist"><p>Gist</p></a></li>
+                <li><a href="#copy"><p>Author</p></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="card">
+        <div align="center">
+            <div class="alert">
+                <h1><p class="text-red-500 font-bold text-2xl">Welcome to overdrive projects.</p></h1>
+            </div>
+            <p><img src="images/hokuhoku.gif" alt="ホクホクにゃんこ"></p>
+        </div>
+            <div class="alert">
+                <h1>
+                    <a name="youtube">
+                    <p class="text-red-500 font-bold text-2xl">
+                        <a href="https://youtu.be/xRNDvD-qq1c?si=BKFNXwAC71uCUxp2">.netfileの構成、</a>
+                    </p>
+                    <p class="text-red-500 font-bold text-2xl">
+                        <a href="https://youtu.be/xRNDvD-qq1c?si=BKFNXwAC71uCUxp2">neovim/goneovim動作状況</a>
+                    </p>
+                    </a>
+                </h1>
+            </div>
+                <iframe width="530" height="315" src="https://www.youtube.com/embed/xRNDvD-qq1c?si=JX203WUrlWu095gi"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="card">
+                <div class="alert">
+                    <h3>
+                        <p>2025/11/03、現時点で人気のある私の※1 DTCL動画です。</p>
+                        <p>※1 略 Developer Test Completed Log</p>
+                        <p>Neovim環境の構築することを止めました。</p>
+                        <p>→ JetBrains製IDEsに移行のためです。</p>
+                        <p>「理由として挙げられる2点」</p>
+                        <p>1. 設定ファイルが多く調整が必要なこと。</p>
+                        <p>2. プラグインの入れ替えや仕様の変更に対応すること。</p>
+                        <p>※ IDEsを使いましょう、時間が大事です。</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="card">
+                <h3>
+                    <a name="SPA"><p class="text-lg">SPA, Single Page Application.</p></a>
+                    <p class="text-lg">今回、単一のWebページでアプリケーション</p>
+                    <p class="text-lg">を構成する開発手法を用います。</p>
+                    <p class="text-lg">JavaScriptを使って、快適なユーザー体験（UX）</p>
+                    <p class="text-lg">の実現を目的にしています。</p>
+                    <p class="text-lg">※ 説明文は、わかりやすさのため。</p>
+                    <p class="text-lg">英文と日本語を混在させています</p>
+                </h3>
+            </div>
+            <div class="card">
+                <h3><a name="GitHub"><p class="text-red-500 font-bold text-2xl"><a href="https://github.com/takkii">GitHub/takkii</a></p></a></h3>
+                <p><img src="images/GitHub.gif" alt="GitHub profile"></p>
+                <div class="alert">
+                    <h3>
+                        <p>OSS活動のポートフォリオです。</p>
+                        <p>公開するプロジェクトをまとめました。</p>
+                        <p>何年も使っているので、プロジェクト内の挙動はほぼ正確になっています。</p>
+                        <p>思い出の詰まったプロジェクトも多々あります。</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="card">
+                <h3><a name="GitHubPage"><p class="text-red-500 font-bold text-2xl"><a href="https://takkii.github.io/">Piece of Ruby Shop</a></p></a></h3>
+                <p><img src="images/GitHubIO.gif" alt="GitHub pages"></p>
+                <div class="alert">
+                    <h3>
+                        <p>自己紹介や経歴などを紹介するページです。</p>
+                        <p>jekyllを利用し、Dockerでビルドしています。</p>
+                        <p>スタイルシートやフォルダ構成などは自動で形成されます。</p>
+                        <p>フリーランス時代に作成したページでなんだか懐古感を想います。</p>
+                    </h3>
+                </div>
+            </div>
+            <div class="card">
+                <h3><a name="Gist"><p class="text-red-500 font-bold text-2xl"><a href="https://gist.github.com/takkii">Gist Page</a></p></a></h3>
+                <p><img src="images/Gist.gif" alt="Gist pages"></p>
+                <div class="alert">
+                    <h3>
+                        <p>Gistページです。</p>
+                        <p>公開したプロジェクトのアナウンスや記事をまとめています。</p>
+                        <p>以下省略が多いですが、形にすることで雰囲気を楽しめるようにしています。</p>
+                        <p>記事やアナウンスの整理整頓をしました。少数で管理しています。</p>
+                    </h3>
+                </div>
+            </div>
+            <script type="text/javascript">
+                function searchWord(word) {
+                    if (!document.getElementsByTagName) return;
+                    if (!word) return;
+                    const arrayA = document.getElementsByTagName("div", "a", "p");
+                    for (let i = 0; i < arrayA.length; i++) {
+                        if (arrayA[i].innerHTML.match(word)) {
+                            if (arrayA[i].scrollIntoView)
+                                arrayA[i].scrollIntoView();
+                            arrayA[i].focus();
+                            return;
+                        }
+                    }
+                    alert("見つかりませんでした。");
+                }
+            </script>
+            <div class="card">
+            <div class="alert">
+            <div align='right'>
+                <div class="font-color-blue-bold"><h5> 単語があるかないか検索🔎 </h5></div>
+                <br />
+                <form action="views/index.ejs" lang="ja" onsubmit="searchWord(this.elements['word'].value);
+          return false;">
+                    <input type="text" name="word" placeholder="検索する単語を入力">
+                    <input type="submit" value="検索">
+                </form>
+            </div>
+            </div>
+                <a name="copy"><p id="cpr">Copyright &copy; 2025 Takayuki Kamiyama.</p></a>
+                <script>
+                    OneDay = new Date();
+                    OneYear = this.OneDay.getFullYear();
+
+                    const cpr_2025 = document.getElementById("cpr");
+                    cpr_2025.innerHTML = "&copy; 2025-" + OneYear + " Takayuki Kamiyama.";
+                </script>
+            </div>
+        </div>
+    </div>
+</main>
+</html>
