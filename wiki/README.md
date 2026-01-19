@@ -1,3 +1,7 @@
+<div align="right">
+    English / <a href="https://github.com/takkii/darkknight/blob/main/wiki/README_ja.md">Japanese</a>
+</div>
+
 ### Dark Knight
 
 > Current: Per-endpoint authorization🎯
