@@ -27,11 +27,6 @@ javascript, front end + additional functionality
 elixir, backend + control
 ```
 
-### Initial Configuration
-
-> wget https://github.com/takkii/darknight/archive/refs/tags/v1.0.1.3.zip
-
-* Hello World will be displayed upon startup. Use this for the Phoenix project new development.
 * Using [DarkReader](https://addons.mozilla.org/ja/firefox/addon/darkreader/), for mozilla firefox.
 
 _Update history: 2026/01/18🔄_
