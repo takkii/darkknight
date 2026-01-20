@@ -40,3 +40,8 @@ npm-debug.log
 
 # Ignore mix.lock dependency librarys.
 mix.lock
+
+# Ignore postgres.
+/db/data/18/*
+/db/data/.psql_history
+/db/data/.ash_history
