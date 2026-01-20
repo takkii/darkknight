@@ -17,6 +17,17 @@ services:
       - ${POSTGRES_PORT}:5432
     volumes:
       - ./db/data:/var/lib/postgresql/data
-
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - public:/darkknight/public
+    ports:
+      - "3000:3000"
+    depends_on:
+      - app
 volumes:
   node_modules:
+  public:
