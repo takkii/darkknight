@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-  <h1><p>Darkknight</p></h1>
+  <h1><p>Dark knight</p></h1>
   <br />
   <p>Status: Per-endpoint authorization🎯</p>
   <br />
