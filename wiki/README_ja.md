@@ -10,7 +10,7 @@
 >
 > npm/types-serverでJSON処理(参照: [shivaプロジェクト](https://github.com/takkii/shiva))を行わない方向性を維持します。
 
-```elixir
+```markdown
 # https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Server.html
 # 開発環境、非商用ライセンスRubyMine/mix arguments
 
