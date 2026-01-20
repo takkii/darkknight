@@ -1,0 +1,22 @@
+services:
+  app:
+    build: ./.docker-config/app
+    ports:
+      - ${APP_PORT}:4000
+    command: mix phx.server
+    volumes:
+      - .:/workspace
+      - node_modules:/workspace/assets/node_modules
+
+  db:
+    build: ./.docker-config/db
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    ports:
+      - ${POSTGRES_PORT}:5432
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+
+volumes:
+  node_modules:
