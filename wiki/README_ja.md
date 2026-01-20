@@ -6,9 +6,13 @@
 
 日本語で内容を加筆して環境構築を書いていきます。
 
-> 現在: エンドポイント毎の認可🎯
+> ### 現在: エンドポイント毎の認可🎯
 >
 > npm/types-serverでJSON処理(参照: [shivaプロジェクト](https://github.com/takkii/shiva))を行わない方向性を維持します。
+>
+> ### 役割 (dark knight)
+> javascript、フロントエンド + 機能追加
+> elixir、バックエンド + 制御
 
 ```markdown
 # https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Server.html
@@ -25,12 +29,8 @@ phx.server
 # phx.server コンパイルしない
 phx.server --no-compile
 
-# http://localhost:4000
+# 起動 (使用していない)
 phx.server
-
-# 役割 (darkknight)
-javascript、フロントエンド + 機能追加
-elixir、バックエンド + 制御
 
 # Docker環境構築
 cd darkknigt
@@ -39,7 +39,7 @@ mkdir db/data
 
 # ビルド
 docker-compose build --no-cache
-# 常駐
+# 常駐 (現在の起動方法)
 docker compose up -d
 # 常駐解除
 docker-compose down
@@ -87,4 +87,4 @@ POSTGRES_PORT=5432
 
 DarkReader: [Add-ons](https://addons.mozilla.org/ja/firefox/addon/darkreader/) | [拡張機能](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja)をMozilla FireFox / Google Chromeで使用しています。
 
-_更新履歴: 2026/01/20🔄_
+_更新履歴: 2026/01/21🔄_
