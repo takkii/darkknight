@@ -4,9 +4,9 @@
   <br />
   <p>Status: Per-endpoint authorization🎯</p>
   <br />
-    <p> Mozilla FireFox 🦊</p>
+    <p> ❎️ Deprecated in Darkknight: Mozilla FireFox 🦊</p>
     <img src="./images/hokuhoku_mozilla.gif">
-    <p> Google Chrome 🟢</p>
+    <p> ⭕️ Recommendation in Darkknight: Google Chrome 🟢</p>
     <img src="./images/hokuhoku_chrome.gif">
   <br />
   <h5><p>Run mix setup to install and setup dependencies</p></h3>
