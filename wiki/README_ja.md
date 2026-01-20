@@ -2,7 +2,7 @@
    <a href="https://github.com/takkii/darkknight/tree/main/wiki">英語</a> / 日本語
 </div>
 
-### 暗黒騎士
+### 暗黒 騎士
 
 日本語で内容を加筆して環境構築を書いていきます。
 
@@ -51,6 +51,7 @@ su - postgres
 psql -U takkii
 ALTER ROLE takkii WITH PASSWORD 'elixir20250120';
 ALTER ROLE takkii SUPERUSER;
+\q
 
 # 起動確認
 docker compose run --rm app mix --version
@@ -58,6 +59,9 @@ docker compose run --rm db psql --version
 
 # 依存ライブラリ解消
 docker compose run --rm app mix deps.get
+
+# アセット解消
+docker compose run --rm app mix assets.setup
 
 # DBを作成
 docker compose run --rm app mix ecto.create
@@ -81,6 +85,6 @@ POSTGRES_PASSWORD=elixir20250120
 POSTGRES_PORT=5432
 ```
 
-[DarkReader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja)をGoogle Chromeで使用しています。
+DarkReader: [Add-ons](https://addons.mozilla.org/ja/firefox/addon/darkreader/) | [拡張機能](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja)をMozilla FireFox / Google Chromeで使用しています。
 
 _更新履歴: 2026/01/20🔄_
