@@ -31,6 +31,6 @@ javascript, front end + additional functionality
 elixir, backend + control
 ```
 
-* Using [DarkReader](https://addons.mozilla.org/ja/firefox/addon/darkreader/), for mozilla firefox.
+* Using [DarkReader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja), for Google Chrome.
 
 _Update history: 2026/01/18🔄_

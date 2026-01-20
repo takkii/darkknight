@@ -83,6 +83,6 @@ POSTGRES_PASSWORD=elixir20250120
 POSTGRES_PORT=5432
 ```
 
-[DarkReader](https://addons.mozilla.org/ja/firefox/addon/darkreader/)をmozilla firefoxで使用しています。
+[DarkReader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja)をGoogle Chromeで使用しています。
 
 _更新履歴: 2026/01/20🔄_
