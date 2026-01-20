@@ -6,6 +6,8 @@
 
 日本語で内容を加筆して環境構築を書いていきます。
 
+実装予定: nginx/certbot対応
+
 > 現在: エンドポイント毎の認可🎯
 >
 > npm/types-serverでJSON処理(参照: [shivaプロジェクト](https://github.com/takkii/shiva))を行わない方向性を維持します。
@@ -34,6 +36,7 @@ elixir、バックエンド + 制御
 
 # Docker環境構築
 cd darkknigt
+mkdir db
 mkdir db/data
 
 # ビルド
@@ -47,17 +50,37 @@ docker-compose down
 docker-compose exec db bash
 passwd postgres
 su - postgres
-create role takkii WITH CREATEDB login password 'elixir20250120';
+psql -U takkii
+ALTER ROLE takkii WITH PASSWORD 'elixir20250120';
 ALTER ROLE takkii SUPERUSER;
-\q;
+
+# 起動確認
+docker compose run --rm app mix --version
+docker compose run --rm db psql --version
+
+# 依存ライブラリ解消
+docker compose run --rm app mix deps.get
 
 # DBを作成
 docker compose run --rm app mix ecto.create
 
 # dockerのコンテナでディスク容量不足
 docker system prune -a --volumes
+
 # docker永続化データ削除
 docker-compose down -v
+```
+
+> .env
+
+```dotenv
+COMPOSE_PROJECT_NAME=phx_darkknight
+
+APP_PORT=4000
+
+POSTGRES_USER=takkii
+POSTGRES_PASSWORD=elixir20250120
+POSTGRES_PORT=5432
 ```
 
 [DarkReader](https://addons.mozilla.org/ja/firefox/addon/darkreader/)をmozilla firefoxで使用しています。
