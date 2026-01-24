@@ -1,8 +1,7 @@
 <div align="center">
   <br />
   <h1><p>Dark knight</p></h1>
-  <br />
-  <p>Status: Per-endpoint authorization🎯</p>
+  <p>Now Status: VPS <a href="http://pieceof.shop/">Server</a> is running🛡️ / Per-endpoint authorization🎯</p>
   <br />
     <p> ❎️ Deprecated in Darkknight: Mozilla FireFox 🦊</p>
     <img src="./images/hokuhoku_mozilla.gif">
