@@ -42,15 +42,24 @@ config :esbuild,
   ]
 
 # Configure tailwind (the version is required)
-config :tailwind,
-  version: "4.1.12",
-  darkknight: [
-    args: ~w(
-      --input=assets/css/app.css
-      --output=priv/static/assets/css/app.css
-    ),
-    cd: Path.expand("..", __DIR__)
-  ]
+# config :tailwind,
+#  version: "4.1.12",
+#  darkknight: [
+#    args: ~w(
+#      --input=assets/css/app.css
+#      --output=priv/static/assets/css/app.css
+#    ),
+#    cd: Path.expand("..", __DIR__)
+#  ]
+
+config :dart_sass,
+   version: "1.77.8",
+   darkknight: [
+      args: ~w(
+        css/app.css ../priv/static/assets/app.css
+      ),
+      cd: Path.expand("../assets", __DIR__)
+   ]
 
 # Configure Elixir's Logger
 config :logger, :default_formatter,
