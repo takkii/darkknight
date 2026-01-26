@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <a name="name"><title>overdrive</title></a>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="csrf-token" content={get_csrf_token()} />
-    <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"} />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="csrf-token" content={get_csrf_token()}/>
+    <link phx-track-static rel="stylesheet" href={~p"/assets/css/app.css"}/>
     <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}>
     </script>
 </head>
@@ -29,7 +29,13 @@
                 <li><a href="#GitHub"><p>GitHub/takkii</p></a></li>
                 <li><a href="#GitHubPage"><p>Piece of Ruby Shop</p></a></li>
                 <li><a href="#Gist"><p>Gist Page</p></a></li>
-                <li><a href="#copy"><p>Copyright 2025-2026 Takayuki Kamiyama.</p></a></li>
+                <li><a href="#copy"><p id="crr">Copyright 2025 Takayuki Kamiyama.</p></a></li>
+                <script>
+                    OneDay = new Date();
+                    OneYear = this.OneDay.getFullYear();
+                    const crr_2025 = document.getElementById("crr");
+                    crr_2025.innerHTML = "Copyright &copy; 2025-" + OneYear + " Takayuki Kamiyama.";
+                </script>
             </ul>
         </nav>
     </div>
