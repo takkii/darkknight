@@ -29,8 +29,15 @@ config :darkknight, DarkknightWeb.Endpoint,
   debug_errors: true,
   secret_key_base: "VDNHYVOaLrW9CZTtZ/0Mma/0jAx8c0z787JhujBe371eLOJ2i6bYOf4n1qZDAx18",
   watchers: [
-    esbuild: {Esbuild, :install_and_run, [:darkknight, ~w(--sourcemap=inline --watch)]},
-    tailwind: {Tailwind, :install_and_run, [:darkknight, ~w(--watch)]}
+    esbuild: {
+      Esbuild, :install_and_run, [:darkknight, ~w(--sourcemap=inline --watch)]
+    },
+    # tailwind: {Tailwind, :install_and_run, [:darkknight, ~w(--watch)]}
+    sass: {
+      DartSass,
+      :install_and_run,
+      [:default, ~w(--embed-source-map --source-map-urls=absolute --watch)]
+    }
   ]
 
 # ## SSL Support
