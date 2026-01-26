@@ -23,6 +23,7 @@ import "phoenix_html"
 import {Socket} from "phoenix"
 import {LiveSocket} from "phoenix_live_view"
 import {hooks as colocatedHooks} from "phoenix-colocated/darkknight"
+import "cairo.js"
 
 const csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 const liveSocket = new LiveSocket("/live", Socket, {
@@ -65,11 +66,11 @@ if (process.env.NODE_ENV === "development") {
         window.addEventListener("keydown", e => keyDown = e.key)
         window.addEventListener("keyup", _e => keyDown = null)
         window.addEventListener("click", e => {
-            if(keyDown === "c"){
+            if (keyDown === "c") {
                 e.preventDefault()
                 e.stopImmediatePropagation()
                 reloader.openEditorAtCaller(e.target)
-            } else if(keyDown === "d"){
+            } else if (keyDown === "d") {
                 e.preventDefault()
                 e.stopImmediatePropagation()
                 reloader.openEditorAtDef(e.target)
@@ -80,27 +81,3 @@ if (process.env.NODE_ENV === "development") {
     })
 }
 
-/**
- * Updated by Takayuki Kamiyama on 2026/01/02.
- * Team 'Red Eyes, Black Dragon.'
- */
-
-$(function () {
-    $('a[href^=#]').click(function () {
-        const speed = 400; // millisecond
-        let href = $(this).attr("href");
-        const target = $(href === "#" || href === "" ? 'html' : href);
-        $($.browser.safari ? 'body' : 'html').animate({
-            scrollTop: position
-        }, speed, 'swing');
-        let body = 'body';
-        const userAgent = window.navigator.userAgent.toLowerCase();
-        if (userAgent.indexOf('msie') > -1 || userAgent.indexOf('trident') > -1 || userAgent.indexOf("firefox") > -1) {
-            body = 'html';
-        }
-        $(body).animate({
-            scrollTop: position
-        }, speed, 'swing');
-        return false;
-    });
-});
