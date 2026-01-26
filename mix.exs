@@ -88,7 +88,7 @@ defmodule Darkknight.MixProject do
       "assets.build": ["compile", "sass darkknight", "esbuild darkknight"],
       "assets.deploy": [
         # "tailwind darkknight --minify",
-        "sass default --no-source-map --style=compressed",
+        "sass darkknight --minify",
         "esbuild darkknight --minify",
         "phx.digest"
       ],
