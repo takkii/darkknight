@@ -89,4 +89,6 @@ POSTGRES_PORT=5432
 
 DarkReader: [Add-ons](https://addons.mozilla.org/ja/firefox/addon/darkreader/) | [拡張機能](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja)をMozilla FireFox / Google Chromeで使用しています。
 
-_更新履歴: 2026/01/21🔄_
+※ 尚、VPSサーバー側では設定など適宜変更してます。通常のdarkknightプロジェクトではありません。
+
+_更新履歴: 2026/01/26🔄_
