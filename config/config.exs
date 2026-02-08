@@ -41,25 +41,14 @@ config :esbuild,
     env: %{"NODE_PATH" => [Path.expand("../deps", __DIR__), Mix.Project.build_path()]}
   ]
 
-# Configure tailwind (the version is required)
-# config :tailwind,
-#  version: "4.1.12",
-#  darkknight: [
-#    args: ~w(
-#      --input=assets/css/app.css
-#      --output=priv/static/assets/css/app.css
-#    ),
-#    cd: Path.expand("..", __DIR__)
-#  ]
-
 config :dart_sass,
    version: "1.77.8",
    darkknight: [
-      args: [
-        "scss/index.scss",
-        "../priv/static/assets/from_scss.css"
-   ],
-      cd: Path.expand("../assets", __DIR__)
+      args: ~w(
+        --input=scss/index.scss
+        --output=priv/static/assets/css/from_scss.css
+      ),
+      cd: Path.expand("..", __DIR__)
    ]
 
 # Configure Elixir's Logger
