@@ -55,9 +55,10 @@ config :esbuild,
 config :dart_sass,
    version: "1.77.8",
    darkknight: [
-      args: ~w(
-        css/app.css ../priv/static/assets/app.css
-      ),
+      args: [
+        "scss/index.scss",
+        "../priv/static/assets/from_scss.css"
+   ],
       cd: Path.expand("../assets", __DIR__)
    ]
 
