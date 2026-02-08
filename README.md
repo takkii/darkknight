@@ -1,7 +1,7 @@
 <div align="center">
   <h1><p>Dark knight</p></h1>
   <br />
-  <img src="./images/darkknight.gif">
+  <p><img src="./images/darkknight.gif"></p>
   <p>Now Status: VPS <a href="http://pieceof.shop/">Server</a> to stopped.⏹️</p>
   <h5><p>Run mix setup to install and setup dependencies</p></h3>
   <h5><p>Start Phoenix endpoint with mix phx.server or inside IEx with iex -S mix phx.server</p></h3>
