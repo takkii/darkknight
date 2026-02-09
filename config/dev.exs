@@ -24,11 +24,13 @@ config :darkknight, DarkknightWeb.Endpoint,
   debug_errors: true,
   secret_key_base: "VDNHYVOaLrW9CZTtZ/0Mma/0jAx8c0z787JhujBe371eLOJ2i6bYOf4n1qZDAx18",
   watchers: [
-    esbuild: {
-      Esbuild,
-      :install_and_run,
-      [:darkknight, ~w(--sourcemap=inline --watch)]
-    },
+    #    esbuild: {
+    #      Esbuild,
+    #      :install_and_run,
+    #      [:darkknight, ~w(--sourcemap=inline --watch)]
+    #    },
+    node: ["build.js", "--watch", cd: Path.expand("../assets/js", __DIR__)],
+
     sass: {
       DartSass,
       :install_and_run,

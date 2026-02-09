@@ -34,6 +34,7 @@ darknight-*.tar
 # In case you use Node.js/npm, you want to ignore these.
 npm-debug.log
 /assets/node_modules/
+/node_modules/*
 
 # Ignore Elixir plugin for RubyMine.
 /.idea/*
@@ -45,3 +46,6 @@ mix.lock
 /db/data/18/*
 /db/data/.psql_history
 /db/data/.ash_history
+
+# Ignore package-lock.json
+package-lock.json

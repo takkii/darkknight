@@ -45,10 +45,10 @@ config :dart_sass,
    version: "1.77.8",
    darkknight: [
       args: ~w(
-        --input=scss/index.scss
-        --output=priv/static/assets/css/from_scss.css
+        scss/index.scss
+        priv/static/assets/css/from_scss.css
       ),
-      cd: Path.expand("..", __DIR__)
+      cd: Path.expand("../assets", __DIR__)
    ]
 
 # Configure Elixir's Logger
