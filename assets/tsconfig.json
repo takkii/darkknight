@@ -60,7 +60,7 @@
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["js/**/*"],
+  "include": ["js/*"],
   "exclude": ["node_modules"],
   "compileOnSave": false
 }

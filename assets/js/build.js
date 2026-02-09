@@ -18,7 +18,7 @@ let opts = {
     bundle: true,
     logLevel: "info",
     target: "es2022",
-    outdir: "../priv/static/assets",
+    outdir: "../build/js/",
     external: ["*.css", "fonts/*", "images/*"],
     nodePaths: ["../deps"],
     loader: loader,
