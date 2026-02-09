@@ -2,7 +2,7 @@
    <a href="https://github.com/takkii/darkknight/tree/main/wiki">英語</a> / 日本語
 </div>
 
-### 暗黒 騎士
+### 暗黒騎士
 
 日本語で内容を加筆して環境構築を書いていきます。
 
@@ -35,7 +35,7 @@ phx.server --no-compile
 phx.server
 
 # Docker環境構築
-cd darkknigt
+cd darkknight
 mkdir db
 mkdir db/data
 
@@ -87,8 +87,14 @@ POSTGRES_PASSWORD=elixir20250120
 POSTGRES_PORT=5432
 ```
 
+```markdown
+# npm 依存ライブラリ解消
+npm install
+
+# esbuild 有効化
+npm install darkknight/../deps/phoenix darkknight/../deps/phoenix_html darkknight/../deps/phoenix_live_view --save
+```
+
 DarkReader: [Add-ons](https://addons.mozilla.org/ja/firefox/addon/darkreader/) | [拡張機能](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja)をMozilla FireFox / Google Chromeで使用しています。
 
-※ 尚、VPSサーバー側では設定など適宜変更してます。通常のdarkknightプロジェクトではありません。
-
-_更新履歴: 2026/01/26🔄_
+_更新履歴: 2026/02/10🔄_
