@@ -33,6 +33,7 @@ npm-debug.log
 /assets/node_modules/*
 /node_modules/*
 /assets/build/*
+/assets/css/*
 
 # Ignore Elixir plugin for RubyMine.
 /.idea/*
