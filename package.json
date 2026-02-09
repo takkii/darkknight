@@ -1,7 +1,7 @@
 {
   "name": "darkknight",
-  "version": "1.0.0",
-  "description": "FullStack for overdrive custom versions.",
+  "version": "1.0.1",
+  "description": "Custom Version, Overdrive for FullStack.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
