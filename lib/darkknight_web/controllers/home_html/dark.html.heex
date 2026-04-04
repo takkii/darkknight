@@ -3,7 +3,7 @@
 
 <head>
     <a name="name">
-        <title>overdrive</title>
+        <title>overdrive for darkknight project.</title>
     </a>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8" />
@@ -26,7 +26,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="#name">
-                        <p>Welcome to overdrive project.</p>
+                        <p>Welcome to overdrive for darkknight.</p>
                     </a></li>
                 <li><a href="#youtube">
                         <p>.netfileの構成、neovim/goneovim動作状況"</p>
@@ -58,8 +58,8 @@
     <div class="container">
         <div align="center">
             <div class="alert">
-                <h1 class="heading-22">
-                    <p>Welcome to overdrive project.</p>
+                <h1>
+                    <p>Welcome to overdrive for darkknight.</p>
                 </h1>
             </div>
             <p><img src="images/hokuhoku.gif" alt="ホクホクにゃんこ"></p>
@@ -91,7 +91,7 @@
                 <h3>
                     <p><a name="SPA">SPA, Single Page Application.</a></p>
                     <p>今回、単一のWebページでアプリケーションを構成する開発手法を用います。</p>
-                    <p>JavaScriptを使って、快適なユーザー体験（UX）の実現を目的にしています。</p>
+                    <p>JavaScriptを使って、快適なユーザー体験(UX)の実現を目的にしています。</p>
                     <p>※ 説明文は、わかりやすさのため英文と日本語を混在させています。</p>
                 </h3>
             </div>
@@ -140,7 +140,8 @@
             <script type="text/javascript">
                 function searchWord(word) {
                     if (!document.getElementsByTagName) return;
-                    const arrayA = document.getElementsByTagName("a", "p");
+                    if (!word) return;
+                    const arrayA = document.getElementsByTagName("p", "a");
                     for (let i = 0; i < arrayA.length; i++) {
                         if (arrayA[i].innerHTML.match(word)) {
                             if (arrayA[i].scrollIntoView)
@@ -154,10 +155,10 @@
             </script>
             <div align='right'>
                 <div class="font-color-blue-bold">
-                    <h5> 単語を検索(精度: 低)🔎 </h5>
+                    <h5> 単語を検索 🔍️ </h5>
                 </div>
-                <form action="./dark.html.heex" lang="ja" onsubmit="searchWord(this.elements['word'].value);
-          return false;">
+                <form action="./dark.html.heex" lang="ja"
+                    onsubmit="searchWord(this.elements['word'].value); return false;">
                     <input type="text" name="word" placeholder="検索する単語を入力">
                     <input type="submit" value="検索">
                 </form>
