@@ -50,6 +50,7 @@ docker-compose down
 docker-compose exec db bash
 passwd postgres
 su - postgres
+createuser -U postgres takkii -r -d
 psql -U takkii
 ALTER ROLE takkii WITH PASSWORD 'elixir20250120';
 ALTER ROLE takkii SUPERUSER;
