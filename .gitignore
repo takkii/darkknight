@@ -23,7 +23,7 @@ erl_crash.dump
 /tmp/
 
 # Ignore package tarball (built via "mix hex.build").
-darknight-*.tar
+darkknight-*.tar
 
 # Ignore digested assets cache.
 /priv/static/cache_manifest.json
@@ -38,13 +38,12 @@ npm-debug.log
 # Ignore Elixir plugin for RubyMine.
 /.idea/*
 
-# Ignore mix.lock dependency library.
-mix.lock
-
 # Ignore postgres.
 /db/data/18/*
 /db/data/.psql_history
 /db/data/.ash_history
 
-# Ignore package-lock.json
+# Ignore, file for npm dependency.
 package-lock.json
+yarn.lock
+mix.lock
