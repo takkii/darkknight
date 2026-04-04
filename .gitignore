@@ -38,7 +38,7 @@ npm-debug.log
 # Ignore Elixir plugin for RubyMine.
 /.idea/*
 
-# Ignore mix.lock dependency librarys.
+# Ignore mix.lock dependency library.
 mix.lock
 
 # Ignore postgres.

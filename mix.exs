@@ -4,7 +4,7 @@ defmodule Darkknight.MixProject do
   def project do
     [
       app: :darkknight,
-      version: "1.0.0",
+      version: "1.0.2",
       elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
