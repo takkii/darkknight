@@ -1,23 +1,25 @@
 {
   "name": "darkknight",
-  "version": "1.0.1",
-  "description": "Custom Version, Overdrive for FullStack.",
+  "version": "1.0.2",
+  "description": "overdrive for darkknight project.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "fullstack",
+    "javascript",
+    "scss",
     "localhost",
-    "vps"
+    "phoenix",
+    "elixir"
   ],
   "author": "Takayuki Kamiyama",
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.27.3"
+    "esbuild": "^0.28.0"
   },
   "dependencies": {
-    "@esbuild/linux-x64": "^0.27.3",
-    "npm-check-updates": "^19.3.2",
+    "@esbuild/linux-x64": "^0.28.0",
+    "npm-check-updates": "^20.0.0",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
     "phoenix_live_view": "file:deps/phoenix_live_view"
