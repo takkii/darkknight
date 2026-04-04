@@ -14,10 +14,10 @@ defmodule DarkknightWeb.Plug.EnsureAuthorized do
     |> DarkknightWeb.Guardian.Plug.current_resource()
     |> authorized?(controller, action)
     |> case do
-         true -> conn
-         _ -> conn |> DarkknightWeb.FallbackController.controller()
-         _ -> conn |> DarkknightWeb.FallbackController.call({:error, :forbidden})
-       end
+      true -> conn
+      _ -> conn |> DarkknightWeb.FallbackController.controller()
+      _ -> conn |> DarkknightWeb.FallbackController.call({:error, :forbidden})
+    end
   end
 
   @spec all_endpoints() :: list(%{controller: String.t(), action: String.t()})
@@ -33,11 +33,13 @@ defmodule DarkknightWeb.Plug.EnsureAuthorized do
   end
 
   defp authorized?(user, controller, action) do
-    if authorized?(user, controller, action) < 4 && !authorized?(user, controller, action) do
-      {:ok, %{reason: "Permissions"}}
+    if authorized?(user, controller, action) < 4 ||
+         (!authorized?(user, controller, action) &&
+            !authorized?(nil, nil, nil)) do
+      {:ok, %{reason: "Permissions"}, IO.inspect("Permissions is all green.")}
     else
       {:error, %{reason: "Access Denied"}}
-      raise ArgumentError, message: "the argument value is invalid"
+      raise ArgumentError, message: "the argument value is invalid."
     end
   end
 end

@@ -2,15 +2,15 @@
    <a href="https://github.com/takkii/darkknight/tree/main/wiki">英語</a> / 日本語
 </div>
 
-### 暗黒騎士
+### 暗黒騎士 (Darkknight)
 
 日本語で内容を加筆して環境構築を書いていきます。
 
-※ 環境構築するとき、Gistの[記事](https://gist.github.com/takkii/63708d66ba2d41a86dd8e1fda20a79db)を合わせて読んでください。
+※ 環境構築するとき、Gist[記事](https://gist.github.com/takkii/63708d66ba2d41a86dd8e1fda20a79db)を合わせて読んでください。
 
 > ### 現在: エンドポイント毎の認可🎯
 >
-> npm/types-serverでJSON処理(参照: [shivaプロジェクト](https://github.com/takkii/shiva))を行わない方向性を維持します。
+> GitHub: takkii/json-serverでJSONパーサー(参照: [shivaプロジェクト](https://github.com/takkii/shiva))を機能化しない方向性にします。
 >
 > ### 役割 (dark knight)
 > javascript、フロントエンド + 機能追加
@@ -18,23 +18,19 @@
 
 ```markdown
 # https://hexdocs.pm/phoenix/Mix.Tasks.Phx.Server.html
-# 開発環境、非商用ライセンスRubyMine/mix arguments
 
 # 依存ライブラリ解消
-deps.get
+mix deps.get
 # アセット解消
-assets.setup
+mix assets.setup
 # DB設定
-ecto.create
+mix ecto.create
 # phx.server コンパイル
-phx.server
+mix phx.server
 # phx.server コンパイルしない
-phx.server --no-compile
+mix phx.server --no-compile
 
-# 起動 (使用していない)
-phx.server
-
-# Docker環境構築
+# プロジェクト、データ保存先
 cd darkknight
 mkdir db
 mkdir db/data
@@ -50,11 +46,14 @@ docker-compose down
 docker-compose exec db bash
 passwd postgres
 su - postgres
-createuser -U postgres takkii -r -d
 psql -U takkii
 ALTER ROLE takkii WITH PASSWORD 'elixir20250120';
 ALTER ROLE takkii SUPERUSER;
+\du
 \q
+
+# 新規ユーザtakkiiをロール作成可, DB作成可で作成する
+createuser -U postgres takkii -r -d
 
 # 起動確認
 docker compose run --rm app mix --version
@@ -98,4 +97,4 @@ npm install darkknight/../deps/phoenix darkknight/../deps/phoenix_html darkknigh
 
 DarkReader: [Add-ons](https://addons.mozilla.org/ja/firefox/addon/darkreader/) | [拡張機能](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh?hl=ja)をMozilla FireFox / Google Chromeで使用しています。
 
-_更新履歴: 2026/02/10🔄_
+_更新履歴: 2026/04/04🔄_
