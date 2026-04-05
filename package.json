@@ -1,6 +1,6 @@
 {
   "name": "darkknight",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "overdrive for darkknight project.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,10 +15,12 @@
   "author": "Takayuki Kamiyama",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^25.5.0",
     "esbuild": "^0.28.0"
   },
   "dependencies": {
     "@esbuild/linux-x64": "^0.28.0",
+    "jn-server": "^1.0.8",
     "npm-check-updates": "^20.0.0",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
