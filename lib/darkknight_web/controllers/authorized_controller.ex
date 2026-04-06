@@ -5,17 +5,14 @@ defmodule DarkknightWeb.Plug.EnsureAuthorized do
 
   def init(default), do: default
 
-  @spec call(Plug.Conn.t(), any()) :: Plug.Conn.t() | any()
+  @spec call(any(), any()) :: none()
   def call(conn, _params) do
     controller = conn |> Phoenix.Controller.controller_module() |> to_string()
     action = conn |> Phoenix.Controller.action_name() |> Atom.to_string()
 
     conn
-    |> DarkknightWeb.Guardian.Plug.current_resource()
     |> authorized?(controller, action)
     |> case do
-      true -> conn
-      _ -> conn |> DarkknightWeb.FallbackController.controller()
       _ -> conn |> DarkknightWeb.FallbackController.call({:error, :forbidden})
     end
   end
