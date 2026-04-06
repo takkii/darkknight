@@ -42,14 +42,14 @@ config :esbuild,
   ]
 
 config :dart_sass,
-   version: "1.77.8",
-   darkknight: [
-      args: ~w(
+  version: "1.77.8",
+  darkknight: [
+    args: ~w(
         scss/index.scss
         css/from_scss.css
       ),
-      cd: Path.expand("../assets", __DIR__)
-   ]
+    cd: Path.expand("../assets", __DIR__)
+  ]
 
 # Configure Elixir's Logger
 config :logger, :default_formatter,
