@@ -18,7 +18,6 @@ defmodule DarkknightWeb.Router do
     pipe_through :browser
 
     get "/", HomeController, :dark
-    get "/", HomeController, :controller
   end
 
   # Other scopes may use custom stacks.
