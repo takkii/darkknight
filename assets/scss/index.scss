@@ -1,132 +1,233 @@
-body {
-  font-family: "HackGen35 Console NF";
-  font-size: 1.2em;
-  padding: 0em 1em;
-  background-color: #f0f9ff;
-}
+    @charset "shift_jis";
 
-.container {
-  background-color: white;
-  padding: 0.1em 1.2em 0.5em 1.2em;
-}
+    /*------- ◆ 共通部分 ◆ -------*/
 
-h1 {
-  font-size: 1.5em;
-  font-weight: normal;
-  color: white;
-}
+    * {
+      font-style: normal;
+      margin: 0px;
+      padding: 0px;
+    }
 
-h3 {
-  font-size: 1.2em;
-  font-weight: normal;
-  color: white;
-}
+    a:link {
+      color: #004080;
+      font-size: 12px;
+    }
 
-p {
-  padding: 5px 10px;
-}
+    a:hover {
+      color: #005ebb;
+      font-size: 12px;
+    }
 
-.alert {
-  color: white;
-  background-color: royalblue;
-  border: white 6px double;
-  padding: 25px 50px;
-  margin: 25px 0px;
-  border-radius: 0.5em;
-}
+    a:visited {
+      color: #004080;
+      font-size: 12px;
+    }
 
-.card {
-  border: gray 1px solid;
-  padding: 25px 50px;
-  margin: 25px 0px;
-  box-shadow: 5px 7px 5px darkgray;
-}
+    p {
+      margin: 20px 0 20px 0;
+      line-height: 150%;
+      letter-spacing: 1px;
+    }
 
-/* menu bar */
+    h1 {
+      font-size: 12px;
+      margin: 0;
+      padding: 2px 3px 0px 3px;
+      color: #333;
+    }
 
-.menu-wrapper {
-  position: relative;
-}
+    /*------- ◆ main 部分 ◆ -------*/
 
-.menu-icon {
-  width: 40px;
-  height: 30px;
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-  z-index: 3;
-  display: inline-block;
-}
+    #main {
+      margin: 0 auto 0 auto;
+      padding: 0;
+      width: 780px;
+      border-right: solid 1px #cccccc;
+      border-bottom: solid 1px #cccccc;
+      border-left: solid 1px #cccccc;
+      background-color: #ffffff;
+    }
 
-.menu-icon span {
-  display: block;
-  height: 4px;
-  margin: 6px 0;
-  background: #333;
-  border-radius: 2px;
-  transition: 0.4s;
-}
+    /*------- ◆ header ◆ -------*/
 
-#menu-toggle:checked+.menu-icon span:nth-child(1) {
-  transform: translateY(10px) rotate(45deg);
-}
+    #header {
+      margin: 0;
+      background-color: #999999;
+      width: 780px;
+    }
 
-#menu-toggle:checked+.menu-icon span:nth-child(2) {
-  opacity: 0;
-}
+    h2 {
+      font-size: 12px;
+      margin: 0;
+      padding: 5px 3px 5px 3px;
+      color: #444444;
+    }
 
-#menu-toggle:checked+.menu-icon span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
-}
+    #header-inner {
+      margin: 0;
+      padding: 0;
+      color: #333333;
+      width: 780px;
+      background-color: #ffffff;
+      background-repeat: no-repeat;
+    }
 
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.4s;
-  z-index: 1;
-}
+    #table-left {
+      text-align: left;
+      margin: 0;
+      padding: 10px 0 0 10px;
+      font-size: 16px;
+      color: #333333;
+      line-height: 150%;
+      text-decoration: none;
+    }
 
-#menu-toggle:checked~.overlay {
-  opacity: 1;
-  pointer-events: auto;
-}
+    #table-left a {
+      font-size: 16px;
+      color: #333333;
+      text-decoration: none;
+    }
 
-.menu {
-  position: fixed;
-  top: 0;
-  left: -250px;
-  width: 250px;
-  height: 100%;
-  background: #fff;
-  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
-  transition: left 0.4s ease;
-  z-index: 2;
-}
+    #table-left a:hover {
+      font-size: 16px;
+      color: #666666;
+      text-decoration: none;
+    }
 
-#menu-toggle:checked~.menu {
-  left: 0;
-}
+    #table-right {
+      text-align: right;
+      margin: 0;
+      padding: 8px 14px 2px 0;
+      font-size: 12px;
+      color: #333333;
+      line-height: 150%;
+      text-decoration: none;
+    }
 
-.menu ul {
-  list-style: none;
-  padding: 60px 20px;
-}
+    #table-right a {
+      font-size: 12px;
+      color: #333333;
+      text-decoration: none;
+    }
 
-.menu li {
-  margin: 20px 0;
-}
+    #table-right a:hover {
+      font-size: 12px;
+      color: #666666;
+      text-decoration: none;
+    }
 
-.menu a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
+    /*------- ◆ contents ◆ -------*/
 
-.menu a:hover {
-  color: #007bff;
-}
+    #container {
+      margin: 0px;
+      padding: 7px 5px 5px 5px;
+      width: 760px;
+      background-color: #ffffff;
+    }
+
+    /*------- ◆ main contents ◆ -------*/
+
+    #contents {
+      float: right;
+      margin: 5px 0 0 0;
+      padding: 0 0 0 6px;
+      line-height: 150%;
+      letter-spacing: 1px;
+      width: 570px;
+    }
+
+    #contents img.sample {
+      float: left;
+      margin: 20px;
+    }
+
+    #contents p {
+      margin: 18px 0 18px 0;
+      padding: 0;
+      line-height: 160%;
+      letter-spacing: 1px;
+    }
+
+    #news {
+      width: 558px;
+      height: 150px;
+      overflow: auto;
+      background-color: #ffffff;
+      padding: 5px;
+      margin: 12px 0 10px 0;
+      border-top: 1px;
+      border-right: 1px;
+      border-bottom: 1px;
+      border-left: 1px;
+      border-style: solid;
+      border-color: #999999;
+    }
+
+    /*------- ◆ sidemenu ◆ -------*/
+
+    #sidemenu {
+      float: left;
+      margin: 0;
+      padding: 5px 3px 0 8px;
+      width: 160px;
+      text-align: left;
+      line-height: 180%;
+      letter-spacing: 1px;
+      background-color: #ffffff;
+    }
+
+    #sidemenu p {
+      margin: 10px 4px 24px 4px;
+      line-height: 180%;
+    }
+
+    #sidemenu a {
+      color: #004080;
+      font-size: 12px;
+      line-height: 190%;
+    }
+
+    #sidemenu a:hover {
+      color: #005ebb;
+      font-size: 12px;
+      line-height: 190%;
+    }
+
+    /*------- ◆ footer ◆ -------*/
+
+    #footer {
+      clear: both;
+      margin: 0;
+      padding: 10px 15px 10px 0;
+      text-align: right;
+      font-size: 12px;
+      color: #666666;
+      border-top: solid 2px #999999;
+      background-color: #f3f3f3;
+    }
+
+    #footer h2 {
+      margin: 0;
+      text-align: right;
+      padding: 2px 8px 0 0;
+      font-size: 10px;
+      color: #666666;
+    }
+
+    #footer h2 a {
+      color: #666666;
+      font-size: 10px;
+    }
+
+    #footer h2 a:hover {
+      color: #666666;
+    }
+
+    #footer a {
+      color: #666666;
+      font-size: 12px;
+    }
+
+    #footer a:hover {
+      color: #333333;
+    }
