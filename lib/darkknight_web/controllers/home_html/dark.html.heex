@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 
 <head>
-    <a name="name">
-        <title>overdrive for darkknight project.</title>
-    </a>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -12,165 +10,236 @@
     <link phx-track-static rel="stylesheet" href={~p"/assets/css/from_scss.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/js/app.js"}></script>
 </head>
-<main class="main">
-    <div class="menu-wrapper">
-        <input type="checkbox" id="menu-toggle" hidden>
 
-        <label class="menu-icon" for="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+<style>
+    body {
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS P ゴシック", "MS P Gothic", sans-Serif;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        color: #333;
+        background-image: url(assets/images/back.gif);
+        background-repeat: repeat-x;
+    }
 
-        <div class="overlay"></div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#name">
-                        <p>Welcome to overdrive for darkknight project.</p>
-                    </a></li>
-                <li><a href="#youtube">
-                        <p>.netfileの構成、neovim/goneovim動作状況"</p>
-                    </a></li>
-                <li><a href="#SPA">
-                        <p>Single Page Application</p>
-                    </a></li>
-                <li><a href="#GitHub">
-                        <p>GitHub/takkii</p>
-                    </a></li>
-                <li><a href="#GitHubPage">
-                        <p>Piece of Ruby Shop</p>
-                    </a></li>
-                <li><a href="#Gist">
-                        <p>Gist Page</p>
-                    </a></li>
-                <li><a href="#copy">
-                        <p id="crr">Copyright 2025 Takayuki Kamiyama.</p>
-                    </a></li>
-                <script>
-                    OneDay = new Date();
-                    OneYear = this.OneDay.getFullYear();
-                    const crr_2025 = document.getElementById("crr");
-                    crr_2025.innerHTML = "Copyright &copy; 2025-" + OneYear + " Takayuki Kamiyama.";
-                </script>
-            </ul>
-        </nav>
-    </div>
-    <div class="container">
-        <div align="center">
-            <div class="alert">
-                <h1>
-                    <p>Welcome to overdrive for darkknight project.</p>
-                </h1>
-            </div>
-            <p><img src="images/hokuhoku.gif" alt="ホクホクにゃんこ"></p>
-            <div class="card">
-                <h1><a name="youtube">
-                        <p>
-                            <a
-                                href="https://youtu.be/xRNDvD-qq1c?si=BKFNXwAC71uCUxp2">.netfileの構成、neovim/goneovim動作状況</a>
-                        </p>
-                    </a></h1>
-                <iframe width="530" height="315" src="https://www.youtube.com/embed/xRNDvD-qq1c?si=JX203WUrlWu095gi"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="alert">
-                    <h3>
-                        <p>2025/11/03、現時点で人気のある私の※1 DTCL動画です。</p>
-                        <p>※1 略 Developer Test Completed Log</p>
-                        <p>Neovim環境の構築することを止めました。</p>
-                        <p>→ JetBrains製IDEsに移行のためです。</p>
-                        <p>「理由として挙げられる2点」</p>
-                        <p>1. 設定ファイルが多く調整が必要なこと。</p>
-                        <p>2. プラグインの入れ替えや仕様の変更に対応すること。</p>
-                        <p>※ IDEsを使いましょう、時間が大事です。</p>
-                    </h3>
-                </div>
-            </div>
-            <div class="card">
-                <h3>
-                    <p><a name="SPA">SPA, Single Page Application.</a></p>
-                    <p>今回、単一のWebページでアプリケーションを構成する開発手法を用います。</p>
-                    <p>JavaScriptを使って、快適なユーザー体験(UX)の実現を目的にしています。</p>
-                    <p>※ 説明文は、わかりやすさのため英文と日本語を混在させています。</p>
-                </h3>
-            </div>
-            <div class="card">
-                <h3><a name="GitHub">
-                        <p><a href="https://github.com/takkii">GitHub/takkii</a></p>
-                    </a></h3>
-                <p><img src="images/GitHub.gif" alt="GitHub profile"></p>
-                <div class="alert">
-                    <h3>
-                        <p>OSS活動のポートフォリオです。</p>
-                        <p>公開するプロジェクトをまとめました。</p>
-                        <p>何年も使っているので、プロジェクト内の挙動はほぼ正確になっています。</p>
-                        <p>思い出の詰まったプロジェクトも多々あります。</p>
-                    </h3>
-                </div>
-            </div>
-            <div class="card">
-                <h3><a name="GitHubPage">
-                        <p><a href="https://takkii.github.io/">Piece of Ruby Shop</a></p>
-                    </a></h3>
-                <p><img src="images/GitHubIO.gif" alt="GitHub pages"></p>
-                <div class="alert">
-                    <h3>
-                        <p>自己紹介や経歴などを紹介するページです。</p>
-                        <p>jekyllを利用し、Dockerでビルドしています。</p>
-                        <p>スタイルシートやフォルダ構成などは自動で形成されます。</p>
-                        <p>フリーランス時代に作成したページでなんだか懐古感を想います。</p>
-                    </h3>
-                </div>
-            </div>
-            <div class="card">
-                <h3><a name="Gist">
-                        <p><a href="https://gist.github.com/takkii">Gist Page</a></p>
-                    </a></h3>
-                <p><img src="images/Gist.gif" alt="Gist pages"></p>
-                <div class="alert">
-                    <h3>
-                        <p>Gistページです。</p>
-                        <p>公開したプロジェクトのアナウンスや記事をまとめています。</p>
-                        <p>以下省略が多いですが、形にすることで雰囲気を楽しめるようにしています。</p>
-                        <p>記事やアナウンスの整理整頓をしました。少数で管理しています。</p>
-                    </h3>
-                </div>
-            </div>
-            <script type="text/javascript">
-                function searchWord(word) {
-                    if (!document.getElementsByTagName) return;
-                    if (!word) return;
-                    const arrayA = document.getElementsByTagName("p", "a");
-                    for (let i = 0; i < arrayA.length; i++) {
-                        if (arrayA[i].innerHTML.match(word)) {
-                            if (arrayA[i].scrollIntoView)
-                                arrayA[i].scrollIntoView();
-                            arrayA[i].focus();
-                            return;
-                        }
-                    }
-                    alert("見つかりませんでした。");
-                }
-            </script>
-            <div align='right'>
-                <div class="font-color-blue-bold">
-                    <h5> 単語を検索 🔍️ </h5>
-                </div>
-                <form action="./dark.html.heex" lang="ja"
-                    onsubmit="searchWord(this.elements['word'].value); return false;">
-                    <input type="text" name="word" placeholder="検索する単語を入力">
-                    <input type="submit" value="検索">
-                </form>
-            </div>
-            <div class="card">
-                <a name="copy">
-                    <p id="cpr">Copyright &copy; 2025 Takayuki Kamiyama.</p>
-                </a>
-                <script src={~p"/assets/js/copyright.js"}></script>
+    #header-menu {
+        margin: 0 0 4px 0;
+        padding: 0px;
+        height: 28px;
+        border-top: solid 1px #004080;
+        border-bottom: solid 1px #004080;
+        background-image: url(assets/images/menu_back.gif);
+    }
+
+    #header-menu {
+        margin: 0 0 4px 0;
+        padding: 0px;
+        height: 28px;
+        border-top: solid 1px #004080;
+        border-bottom: solid 1px #004080;
+        background-image: url(images/menu_back.gif);
+    }
+
+    #header-menu li {
+        list-style-type: none;
+        float: left;
+    }
+
+    #header-menu li a {
+        font-size: 11px;
+        width: 100px;
+        line-height: 18px;
+        color: #fffffc;
+        background-image: url(images/menu_back.gif);
+        text-align: center;
+        display: block;
+        border-right-width: 1px;
+        border-right-style: solid;
+        border-right-color: #004080;
+        text-decoration: none;
+        padding: 7px 0 3px 0;
+    }
+
+    #header-menu li a:hover {
+        background-image: url(images/menu_back_hover.gif);
+    }
+
+
+    #header-img {
+        margin: 0;
+        padding: 0;
+        width: 780px;
+        height: 180px;
+        font-family: Verdana;
+        background-image: url(images/main_photo.jpg);
+        background-repeat: no-repeat;
+    }
+
+    #header-img-sub {
+        margin: 0;
+        padding: 0;
+        width: 780px;
+        height: 80px;
+        font-family: Verdana;
+        background-image: url(images/sub_photo.jpg);
+        background-repeat: no-repeat;
+    }
+
+    #contents h2 {
+        margin: 0;
+        padding: 7px 0 12px 15px;
+        line-height: 110%;
+        font-size: 14px;
+        color: #444444;
+        background-image: url(images/titlebar.gif);
+        background-repeat: no-repeat;
+    }
+
+    #sidemenu h2 {
+        margin: 0;
+        padding: 10px 0 7px 12px;
+        line-height: 110%;
+        font-size: 12px;
+        color: #fffffc;
+        background-image: url(images/sidebar.gif);
+        background-repeat: no-repeat;
+    }
+
+    li {
+        list-style-image: url(images/mark.gif);
+        margin: 0 0 5px 0;
+    }
+</style>
+
+<body>
+
+    <!-- メインコンテンツ部分 -->
+
+    <main class="main">
+
+        <!-- メインヘッダー部分 -->
+
+        <div id="header">
+            <div id="header-inner">
+
+                <table border="0" align="" cellpadding="0" cellspacing="0" width="780">
+                    <tr>
+                        <td>
+                            <div id="table-left">
+                                <h2><a href="http://pieceof.shop/">Welcome to Darkknight Project</a></h2>
+                            </div>
+                        </td>
+                        <td>
+                            <div id="table-right">
+                                <ol class="breadcrumb-005">
+                                    <li><img src="images/icon.gif" alt="icon" border="0" /> <a
+                                            href="http://pieceof.shop/">ホーム</a></li>
+                                    <li><img src="images/icon.gif" alt="icon" border="0" /> <a
+                                            href="https://github.com/takkii">GitHub/ホーム</a></li>
+                                    <li><img src="images/icon.gif" alt="icon" border="0" /> <a
+                                            href="https://gist.github.com/takkii">Gist/ホーム</a></li>
+                                </ol>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
         </div>
-    </div>
-</main>
+
+        <!-- メインヘッダー終わり -->
+
+        <div id="header-menu">
+            <ul>
+                <li><a href="https://github.com/takkii/golden_eagle/wiki/manual_ja">golden_eagle</a></li>
+                <li><a href="https://github.com/takkii/newworld/tree/main/wiki">newworld</a></li>
+                <li><a href="https://github.com/takkii/darkknight/tree/main/wiki">darkknight</a></li>
+                <li><a href="https://github.com/takkii/json-server/tree/main/wiki">json-server</a></li>
+                <li><a href="https://github.com/takkii/.file">.file</a></li>
+                <li><a href="https://github.com/takkii/zoltraak">zoltraak</a></li>
+            </ul>
+        </div>
+
+        <div id="header-img"></div>
+
+        <!-- トップコンテンツ部分 -->
+
+        <!-- コンテンツ内部 -->
+
+
+
+        <div id="container">
+            <div id="contents">
+
+
+                <h2>elixir/phoenix</h2>
+
+                <p> 静的サイトです。著作権:<a href="https://simptemp.com/template.html">SimpTemp</a>/CSSテンプレート素材を利用しています。
+                </p>
+
+                <h2>派生元プロジェクト</h2>
+
+                <p>overdriveプロジェクトです。コンテンツを差し替えて作り直しています。</p>
+
+
+
+                <h2>Gist</h2>
+
+                <p>
+                    2026.3 <a
+                        href="https://gist.github.com/takkii/3c640ddad08206669f0fd8afa8781341">私のゾルトラークプロジェクト、ロゴの説明</a><br />
+                    <img src="images/under_line.gif" alt="" border="0" />
+                    2026.1 <a
+                        href="https://gist.github.com/takkii/63708d66ba2d41a86dd8e1fda20a79db">VPSにphoenixを設置するとき気をつけたいこと。</a><br />
+                    <img src="images/under_line.gif" alt="" border="0" />
+                    2026.1 <a
+                        href="https://gist.github.com/takkii/f8b037e2d89da71397b8fd4d5d2d84a4">golden-eagleの新機能。</a><br />
+                    <img src="images/under_line.gif" alt="" border="0" />
+                </p>
+
+            </div>
+
+            <!-- コンテンツ内部 終わり -->
+
+            <!-- サイドメニュー部分 -->
+
+            <div id="sidemenu">
+
+                <h2>GitHub</h2>
+                <p>
+                    <a href="https://github.com/takkii">takkii</a><br />
+                    <a href="https://takkii.github.io/">takkii.github.io</a><br />
+                </p>
+
+
+                <h2>外部サイト</h2>
+                <p>
+                    <a href="https://gitlab.com/robust-dev">GitLab/robust-dev</a><br />
+                    <a href="http://pieceof.shop/">ConohaVPS</a><br />
+                    <a href="https://gist.github.com/takkii">Gist/takkii</a><br />
+                </p>
+
+
+            </div>
+
+            <!-- サイドメニュー部分 終わり -->
+
+        </div>
+
+        <!-- トップコンテンツ部分 終わり -->
+
+        <!-- フッター部分 -->
+
+        <div id="footer">
+            Copyright &copy 2026 Takayuki Kamiyama / Team 'Red Eyes, Black Dragon.' All Rights
+            Reserved.design by <a href="http://simptemp.com">SimpTemp</a>
+        </div>
+
+        <!-- フッター部分 終わり -->
+
+        <!-- メインコンテンツ部分 終わり -->
+    </main>
+
+</body>
 
 </html>
