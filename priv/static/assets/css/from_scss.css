@@ -1,271 +1,372 @@
-    @charset "shift_jis";
+@charset "shift_jis";
 
-    /*------- ◆ 共通部分 ◆ -------*/
 
-    * {
-        font-style: normal;
-        margin: 0px;
-        padding: 0px;
-    }
+/*------- ◆ 共通部分 ◆ -------*/
 
-    a:link {
-        color: #004080;
-        font-size: 12px;
-    }
+body {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "MS P ゴシック", "MS P Gothic", sans-Serif;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #333;
+    background-image: url(img/back.gif);
+    background-repeat: repeat-x;
+}
 
-    a:hover {
-        color: #005ebb;
-        font-size: 12px;
-    }
+* {
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
 
-    a:visited {
-        color: #004080;
-        font-size: 12px;
-    }
+a:link {
+    color: #004080;
+    font-size: 12px;
+}
 
-    p {
-        margin: 20px 0 20px 0;
-        line-height: 150%;
-        letter-spacing: 1px;
-    }
+a:hover {
+    color: #005ebb;
+    font-size: 12px;
+}
 
-    h1 {
-        font-size: 12px;
-        margin: 0;
-        padding: 2px 3px 0px 3px;
-        color: #333;
-    }
+a:visited {
+    color: #004080;
+    font-size: 12px;
+}
 
-    /*------- ◆ main 部分 ◆ -------*/
+p {
+    margin: 20px 0 20px 0;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
 
-    #main {
-        margin: 0 auto 0 auto;
-        padding: 0;
-        width: 780px;
-        border-right: solid 1px #cccccc;
-        border-bottom: solid 1px #cccccc;
-        border-left: solid 1px #cccccc;
-        background-color: #ffffff;
-    }
+h1 {
+    font-size: 12px;
+    margin: 0;
+    padding: 2px 3px 0px 3px;
+    color: #333;
+}
 
-    /*------- ◆ header ◆ -------*/
 
-    #header {
-        margin: 0;
-        background-color: #999999;
-        width: 780px;
-    }
 
-    h2 {
-        font-size: 12px;
-        margin: 0;
-        padding: 5px 3px 5px 3px;
-        color: #444444;
-    }
+/*------- ◆ main 部分 ◆ -------*/
 
-    #header-inner {
-        margin: 0;
-        padding: 0;
-        color: #333333;
-        width: 780px;
-        background-color: #ffffff;
-        background-repeat: no-repeat;
-    }
+#main {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 780px;
+    border-right: solid 1px #cccccc;
+    border-bottom: solid 1px #cccccc;
+    border-left: solid 1px #cccccc;
+    background-color: #ffffff;
+}
 
-    #table-left {
-        text-align: left;
-        margin: 0;
-        padding: 10px 0 0 10px;
-        font-size: 16px;
-        color: #333333;
-        line-height: 150%;
-        text-decoration: none;
-    }
 
-    #table-left a {
-        font-size: 16px;
-        color: #333333;
-        text-decoration: none;
-    }
+/*------- ◆ header ◆ -------*/
 
-    #table-left a:hover {
-        font-size: 16px;
-        color: #666666;
-        text-decoration: none;
-    }
+#header {
+    margin: 0;
+    background-color: #999999;
+    width: 780px;
+}
 
-    #table-right {
-        text-align: right;
-        margin: 0;
-        padding: 8px 14px 2px 0;
-        font-size: 12px;
-        color: #333333;
-        line-height: 150%;
-        text-decoration: none;
-    }
+h2 {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px 3px 5px 3px;
+    color: #444444;
+}
 
-    #table-right a {
-        font-size: 12px;
-        color: #333333;
-        text-decoration: none;
-    }
+#header-inner {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    width: 780px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+}
 
-    #table-right a:hover {
-        font-size: 12px;
-        color: #666666;
-        text-decoration: none;
-    }
+#table-left {
+    text-align: left;
+    margin: 0;
+    padding: 10px 0 0 10px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 150%;
+    text-decoration: none;
+}
 
-    /*------- ◆ contents ◆ -------*/
+#table-left a {
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+}
 
-    #container {
-        margin: 0px;
-        padding: 7px 5px 5px 5px;
-        width: 760px;
-        background-color: #ffffff;
-    }
+#table-left a:hover {
+    font-size: 16px;
+    color: #666666;
+    text-decoration: none;
+}
 
-    /*------- ◆ main contents ◆ -------*/
 
-    #contents {
-        float: right;
-        margin: 5px 0 0 0;
-        padding: 0 0 0 6px;
-        line-height: 150%;
-        letter-spacing: 1px;
-        width: 570px;
-    }
+#table-right {
+    text-align: right;
+    margin: 0;
+    padding: 8px 14px 2px 0;
+    font-size: 12px;
+    color: #333333;
+    line-height: 150%;
+    text-decoration: none;
+}
 
-    #contents img.sample {
-        float: left;
-        margin: 20px;
-    }
+#table-right a {
+    font-size: 12px;
+    color: #333333;
+    text-decoration: none;
+}
 
-    #contents p {
-        margin: 18px 0 18px 0;
-        padding: 0;
-        line-height: 160%;
-        letter-spacing: 1px;
-    }
+#table-right a:hover {
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+}
 
-    #news {
-        width: 558px;
-        height: 150px;
-        overflow: auto;
-        background-color: #ffffff;
-        padding: 5px;
-        margin: 12px 0 10px 0;
-        border-top: 1px;
-        border-right: 1px;
-        border-bottom: 1px;
-        border-left: 1px;
-        border-style: solid;
-        border-color: #999999;
-    }
 
-    /*------- ◆ sidemenu ◆ -------*/
+#header-menu {
+    margin: 0 0 4px 0;
+    padding: 0px;
+    height: 28px;
+    border-top: solid 1px #004080;
+    border-bottom: solid 1px #004080;
+    background-image: url(img/menu_back.gif);
+}
 
-    #sidemenu {
-        float: left;
-        margin: 0;
-        padding: 5px 3px 0 8px;
-        width: 160px;
-        text-align: left;
-        line-height: 180%;
-        letter-spacing: 1px;
-        background-color: #ffffff;
-    }
+#header-menu li {
+    list-style-type: none;
+    float: left;
+}
 
-    #sidemenu p {
-        margin: 10px 4px 24px 4px;
-        line-height: 180%;
-    }
+#header-menu li a {
+    font-size: 11px;
+    width: 100px;
+    line-height: 18px;
+    color: #fffffc;
+    background-image: url(img/menu_back.gif);
+    text-align: center;
+    display: block;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #004080;
+    text-decoration: none;
+    padding: 7px 0 3px 0;
+}
 
-    #sidemenu a {
-        color: #004080;
-        font-size: 12px;
-        line-height: 190%;
-    }
+#header-menu li a:hover {
+    background-image: url(img/menu_back_hover.gif);
+}
 
-    #sidemenu a:hover {
-        color: #005ebb;
-        font-size: 12px;
-        line-height: 190%;
-    }
 
-    /*------- ◆ footer ◆ -------*/
+#header-img {
+    margin: 0;
+    padding: 0;
+    width: 780px;
+    height: 180px;
+    font-family: Verdana;
+    background-image: url(img/main_photo.jpg);
+    background-repeat: no-repeat;
+}
 
-    #footer {
-        clear: both;
-        margin: 0;
-        padding: 10px 15px 10px 0;
-        text-align: right;
-        font-size: 12px;
-        color: #666666;
-        border-top: solid 2px #999999;
-        background-color: #f3f3f3;
-    }
+#header-img-sub {
+    margin: 0;
+    padding: 0;
+    width: 780px;
+    height: 80px;
+    font-family: Verdana;
+    background-image: url(img/sub_photo.jpg);
+    background-repeat: no-repeat;
+}
 
-    #footer h2 {
-        margin: 0;
-        text-align: right;
-        padding: 2px 8px 0 0;
-        font-size: 10px;
-        color: #666666;
-    }
 
-    #footer h2 a {
-        color: #666666;
-        font-size: 10px;
-    }
+/*------- ◆ contents ◆ -------*/
 
-    #footer h2 a:hover {
-        color: #666666;
-    }
+#container {
+    margin: 0px;
+    padding: 7px 5px 5px 5px;
+    width: 760px;
+    background-color: #ffffff;
+}
 
-    #footer a {
-        color: #666666;
-        font-size: 12px;
-    }
 
-    #footer a:hover {
-        color: #333333;
-    }
 
-    .breadcrumb-005 {
-        display: flex;
-        gap: 0 20px;
-        list-style: none;
-        padding: 0;
-        font-size: .9em;
-    }
+/*------- ◆ main contents ◆ -------*/
 
-    .breadcrumb-005 li {
-        display: flex;
-        align-items: center;
-    }
+#contents {
+    float: right;
+    margin: 5px 0 0 0;
+    padding: 0 0 0 6px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    width: 570px;
+}
 
-    .breadcrumb-005 li:first-child::before {
-        display: inline-block;
-        width: 1em;
-        height: 1em;
-        margin-right: 4px;
-        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z' fill='%23333333'%3E%3C/path%3E%3C/svg%3E");
-        background-repeat: no-repeat;
-        content: '';
-    }
+#contents img.sample {
+    float: left;
+    margin: 20px;
+}
 
-    .breadcrumb-005 li:not(:last-child)::after {
-        display: inline-block;
-        width: .3em;
-        height: .6em;
-        margin-left: 12px;
-        background-color: #333333;
-        clip-path: polygon(0 0, 100% 50%, 0 100%);
-        content: '';
-    }
+#contents h2 {
+    margin: 0;
+    padding: 7px 0 12px 15px;
+    line-height: 110%;
+    font-size: 14px;
+    color: #444444;
+    background-image: url(img/titlebar.gif);
+    background-repeat: no-repeat;
+}
 
-    .breadcrumb-005 a {
-        color: #333333;
-        text-decoration: none;
-    }
+#contents p {
+    margin: 18px 0 18px 0;
+    padding: 0;
+    line-height: 160%;
+    letter-spacing: 1px;
+}
+
+#news {
+    width: 558px;
+    height: 150px;
+    overflow: auto;
+    background-color: #ffffff;
+    padding: 5px;
+    margin: 12px 0 10px 0;
+    border-top: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-left: 1px;
+    border-style: solid;
+    border-color: #999999;
+}
+
+
+/*------- ◆ sidemenu ◆ -------*/
+
+#sidemenu {
+    float: left;
+    margin: 0;
+    padding: 5px 3px 0 8px;
+    width: 160px;
+    text-align: left;
+    line-height: 180%;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+}
+
+#sidemenu h2 {
+    margin: 0;
+    padding: 10px 0 7px 12px;
+    line-height: 110%;
+    font-size: 12px;
+    color: #fffffc;
+    background-image: url(img/sidebar.gif);
+    background-repeat: no-repeat;
+}
+
+#sidemenu p {
+    margin: 10px 4px 24px 4px;
+    line-height: 180%;
+}
+
+li {
+    list-style-image: url(img/mark.gif);
+    margin: 0 0 5px 0;
+}
+
+#sidemenu a {
+    color: #004080;
+    font-size: 12px;
+    line-height: 190%;
+}
+
+#sidemenu a:hover {
+    color: #005ebb;
+    font-size: 12px;
+    line-height: 190%;
+}
+
+
+
+/*------- ◆ footer ◆ -------*/
+
+#footer {
+    clear: both;
+    margin: 0;
+    padding: 10px 15px 10px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #666666;
+    border-top: solid 2px #999999;
+    background-color: #f3f3f3;
+}
+
+#footer h2 {
+    margin: 0;
+    text-align: right;
+    padding: 2px 8px 0 0;
+    font-size: 10px;
+    color: #666666;
+}
+
+#footer h2 a {
+    color: #666666;
+    font-size: 10px;
+}
+
+#footer h2 a:hover {
+    color: #666666;
+}
+
+#footer a {
+    color: #666666;
+    font-size: 12px;
+}
+
+#footer a:hover {
+    color: #333333;
+}
+
+.breadcrumb-005 {
+    display: flex;
+    gap: 0 20px;
+    list-style: none;
+    padding: 0;
+    font-size: .9em;
+}
+
+.breadcrumb-005 li {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-005 li:first-child::before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 4px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 20C20 20.5523 19.5523 21 19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20ZM11 13V19H13V13H11Z' fill='%23333333'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    content: '';
+}
+
+.breadcrumb-005 li:not(:last-child)::after {
+    display: inline-block;
+    width: .3em;
+    height: .6em;
+    margin-left: 12px;
+    background-color: #333333;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+    content: '';
+}
+
+.breadcrumb-005 a {
+    color: #333333;
+    text-decoration: none;
+}
