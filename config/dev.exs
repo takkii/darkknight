@@ -4,7 +4,8 @@ import Config
 config :darkknight, Darkknight.Repo,
   username: "takkii",
   password: "elixir20250120",
-  hostname: "db",
+  # hostname: "db",
+  hostname: "localhost",
   database: "darkknight_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
@@ -18,7 +19,8 @@ config :darkknight, Darkknight.Repo,
 # to bundle .js and .css sources.
 config :darkknight, DarkknightWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
-  http: [ip: {0, 0, 0, 0}, port: 4000],
+  # http: [ip: {0, 0, 0, 0}, port: 4000],
+  http: [ip: {127, 0, 0, 1}],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
@@ -30,7 +32,6 @@ config :darkknight, DarkknightWeb.Endpoint,
     #      [:darkknight, ~w(--sourcemap=inline --watch)]
     #    },
     node: ["build.js", "--watch", cd: Path.expand("../assets/js", __DIR__)],
-
     sass: {
       DartSass,
       :install_and_run,
