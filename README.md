@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![MITLicense](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/takkii/darkknight/total)
+
 <div align="center">
   <h1><p>Dark knight</p></h1>
   <br />
