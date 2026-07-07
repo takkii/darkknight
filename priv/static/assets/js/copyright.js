@@ -8,7 +8,7 @@ function copyright() {
     OneYear = this.OneDay.getFullYear();
 
     const cpr_2025 = document.getElementById("cpr");
-    cpr_2025.innerHTML = "Copyright &copy 2026-" + OneYear + " Takayuki Kamiyama/Team 'Red Eyes, Black Dragon.'";
+    cpr_2025.innerHTML = "Copyright &copy 2026-" + OneYear + " Takayuki Kamiyama / Team 'Red Eyes, Black Dragon.'";
 }
 
 copyright()
